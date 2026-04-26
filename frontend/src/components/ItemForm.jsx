@@ -57,14 +57,14 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       <label>Image URL</label>
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />
 
-      {/* <label>Stock Qty</label>
+      <label>Stock Qty</label>
       <input
         type="number"
         name="stockQuantity"
         value={formData.stockQuantity}
         onChange={handleChange}
         required
-      /> */}
+      />
 
       <button className="btn primary" type="submit">{submitText}</button>
     </form>

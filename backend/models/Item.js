@@ -27,6 +27,11 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+     stockQuantity: {
+      type: Number,
+      required: [true, "Stock Qty is required"],
+      min: [0, "Stock Qty cannot be negative"],
+    },
   },
   { timestamps: true }
 );
